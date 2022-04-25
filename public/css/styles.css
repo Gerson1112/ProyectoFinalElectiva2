@@ -67,6 +67,17 @@ html{
     width: 100%;
 }
 
-/* .table-wrap, .table-container{
+.close{
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+}
+
+.close img{
+    width: 40px;
+    cursor: pointer;
+}
+
+.hidden{
     display: none;
-} */
+}

@@ -44,14 +44,17 @@
                         TOTAL PASOS: <span id="tp"></span>
                     </div>
                 </div>
-                <button class="reports">Historial</button>
+                <button class="reports" id="reports">Historial</button>
                 <button class="push--skeuo" id="stopbtn"></button>
             </div>
             <div class="button-smartphone"></div>
         </div>
     </div>
 
-    <div class="table-container">
+    <div class="table-container hidden" id="table-container">
+        <div class="close" id="close">
+            <img src="img/close2.png" alt="Close Button">
+        </div>
         <div class="table-wrap">
             <table class="maintable table stripe dataTable"  id="maintable">
                 <thead>
@@ -79,5 +82,6 @@
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>
