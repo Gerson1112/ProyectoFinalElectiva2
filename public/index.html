@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
 
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <div class="trafficlight">
@@ -35,37 +36,48 @@
                 <div class="led-smartphone"></div>
             </div>
             <div class="screen-smartphone">
+                <div class="data-wrap">
+                    <div>
+                        TOTAL METRO: <span id="tm"></span>
+                    </div>
+                    <div>
+                        TOTAL PASOS: <span id="tp"></span>
+                    </div>
+                </div>
+                <button class="reports">Historial</button>
                 <button class="push--skeuo" id="stopbtn"></button>
             </div>
             <div class="button-smartphone"></div>
         </div>
     </div>
- 
-    <div class="table-wrap">
-        <table class="maintable table stripe dataTable"  id="maintable">
-            <thead>
-                <tr>
-                    <th>Pasos</th>
-                    <th>Ubicaion</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+
+    <div class="table-container">
+        <div class="table-wrap">
+            <table class="maintable table stripe dataTable"  id="maintable">
+                <thead>
+                    <tr>
+                        <th>Pasos</th>
+                        <th>Ubicaion</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
     </div>
 
-    <div class="data-wrap">
+    <!-- <div class="data-wrap">
         <div>
             TOTAL METRO: <span id="tm"></span>
         </div>
         <div>
             TOTAL PASOS: <span id="tp"></span>
         </div>
-    </div>
+    </div> -->
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
 
     <script src="/socket.io/socket.io.js"></script>
-      <script src="/js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
